@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="5dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:id="@+id/super_lay"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/city_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textColor="#414e5a"
+            android:textSize="16dp"
+            android:text="Bangalore"
+            android:layout_marginLeft="15dp" />
+
+        <TextView
+            android:id="@+id/maxmintemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textColor="#414e5a"
+            android:textSize="12dp"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@+id/city_name"
+            android:layout_marginTop="5dp"
+            android:text="33°/22° Feels like 25°"
+            />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textColor="#414e5a"
+            android:textSize="12dp"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@+id/maxmintemp"
+            android:text="20 May, 2020"/>
+
+        <TextView
+            android:id="@+id/temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textColor="#414e5a"
+            android:textSize="20dp"
+            android:text="22°"
+            android:layout_marginRight="50dp"
+            android:layout_alignParentRight="true"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_cancel"
+            android:layout_alignParentRight="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:padding="5dp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
